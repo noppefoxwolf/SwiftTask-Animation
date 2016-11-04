@@ -10,9 +10,7 @@ import UIKit
 import SwiftTaskAnimation
 
 final class ViewController: UIViewController {
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     let v = UIView()
     v.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
     v.backgroundColor = UIColor.red
