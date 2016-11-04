@@ -1,0 +1,16 @@
+PODS:
+  - SwiftTaskAnimation (0.1.0)
+
+DEPENDENCIES:
+  - SwiftTaskAnimation (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftTaskAnimation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftTaskAnimation: 5294bc4206bfb308ce7d5a47333bea0688419fa7
+
+PODFILE CHECKSUM: 04310f683f6f9808fb91c52933e8b87009266474
+
+COCOAPODS: 1.2.0.beta.1

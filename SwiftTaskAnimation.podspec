@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/SwiftTaskAnimation'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Tomoya Hirano' => 'tomoya.hirano@dena.com' }
+  s.author           = { 'Tomoya Hirano' => 'cromteria@gmail.com' }
   s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/SwiftTaskAnimation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
