@@ -1,16 +1,28 @@
 PODS:
-  - SwiftTaskAnimation (0.1.0)
+  - SwiftTask (5.0.0)
+  - SwiftTaskAnimation (0.1.0):
+    - SwiftTask (~> 5.0.0)
 
 DEPENDENCIES:
+  - SwiftTask (from `https://github.com/ReactKit/SwiftTask.git`, branch `swift/3.0`)
   - SwiftTaskAnimation (from `../`)
 
 EXTERNAL SOURCES:
+  SwiftTask:
+    :branch: swift/3.0
+    :git: https://github.com/ReactKit/SwiftTask.git
   SwiftTaskAnimation:
     :path: "../"
 
-SPEC CHECKSUMS:
-  SwiftTaskAnimation: 5294bc4206bfb308ce7d5a47333bea0688419fa7
+CHECKOUT OPTIONS:
+  SwiftTask:
+    :commit: 98f89883509d27229d60ff3f2ececdd82a46d674
+    :git: https://github.com/ReactKit/SwiftTask.git
 
-PODFILE CHECKSUM: 04310f683f6f9808fb91c52933e8b87009266474
+SPEC CHECKSUMS:
+  SwiftTask: 7fcd92f8ac16876e82c0e4ced0cea7e028456b6b
+  SwiftTaskAnimation: 9ba6813cfb59579c8078d35ec79c559838c4a767
+
+PODFILE CHECKSUM: 47eaf3a371b200f0456112199a8499889e5dd364
 
 COCOAPODS: 1.2.0.beta.1
