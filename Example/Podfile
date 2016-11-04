@@ -2,8 +2,7 @@ use_frameworks!
 
 target 'SwiftTaskAnimation_Example' do
   pod 'SwiftTaskAnimation', :path => '../'
-  pod 'SwiftTask', git: 'https://github.com/ReactKit/SwiftTask.git', branch: 'swift/3.0'
-
+  
   target 'SwiftTaskAnimation_Tests' do
     inherit! :search_paths
     

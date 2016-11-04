@@ -18,17 +18,24 @@ final class ViewController: UIViewController {
     v.backgroundColor = UIColor.red
     view.addSubview(v)
     
-    let viewAnimation = UIView.animateTask(with: 0.5, delay: 0.0, animations: {
-      v.transform = CGAffineTransform(translationX: 100, y: 0)
+    let moveRight = UIView.animateTask(with: 0.5, delay: 0.0, animations: {
+      v.transform = v.transform.translatedBy(x: 100, y: 0)
     })
-    let displayAnimation = UIView.animateTask(with: 0.5, delay: 0.2, animations: {
-      v.transform = CGAffineTransform(translationX: 100, y: 100)
+    let moveDown = UIView.animateTask(with: 0.5, delay: 1.0, animations: {
+      v.transform = v.transform.translatedBy(x: 0, y: 100)
     })
-    let messageAnimation = UIView.animateTask(with: 0.3, delay: 0.2, animations: {
-      v.transform = CGAffineTransform(translationX: 200, y: 200)
+    let moveLeft = UIView.animateTask(with: 1.0, delay: 1.0, animations: {
+      v.transform = v.transform.translatedBy(x: -100, y: 0)
+    })
+    let alphaAnimation = UIView.animateTask(with: 0.5, delay: 1.0, animations: {
+      v.alpha = 0.5
+    })
+    let rotateAnimation = UIView.animateTask(with: 0.5, animations: {
+      v.backgroundColor = UIColor.blue
     })
     
     //Animation Task
-    viewAnimation +> displayAnimation +> messageAnimation
+    moveRight +> moveDown +> alphaAnimation +> rotateAnimation
+                 moveDown +> moveLeft
   }
 }
